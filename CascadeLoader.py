@@ -1,5 +1,4 @@
 import cv2 as cv
-import cascades
 import Config
 
 
@@ -15,6 +14,9 @@ class LoadFrontalFaceCascade:
             exit(0)
         else:
             return True
+
+    def getFaceCascade(self):
+        return self.faceCascade
 
 
 
